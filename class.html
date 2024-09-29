@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Monitoring System</title>
+    <link rel="stylesheet" href="class.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#home" onclick="navigateTo('home')">Home</a></li>
+            <li><a href="#how-it-works" onclick="navigateTo('how-it-works')">How It Works</a></li>
+            <li><a href="#dataset-overview" onclick="navigateTo('dataset-overview')">Dataset Overview</a></li>
+            <li><a href="#system-functionality" onclick="navigateTo('system-functionality')">System Functionality</a></li>
+            <li><a href="#contact" onclick="navigateTo('contact')">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Page -->
+    <section id="home">
+        <header>
+            <h1>Skill Development Training Monitoring</h1>
+        </header>
+        <div class="banner">
+            <img src="classroom.jpg" alt="Classroom Activities">
+        </div>
+        <div class="intro">
+            <p>Our system assesses training effectiveness by analyzing classroom activities, identifying engagement levels, and flagging institutions for enhanced monitoring or cancellation.</p>
+            <button onclick="navigateTo('how-it-works')">Learn How It Works</button>
+        </div>
+    </section>
+
+    <!-- How It Works Page -->
+    <div class="click_box">
+        <section id="how-it-works" class="page">
+            <h2>How It Works</h2>
+            <p>Our system leverages AI and computer vision to analyze classroom images, detect interactions, and flag anomalies.</p>
+            <img src="example-image.jpg" alt="Sample Image">
+            <ul>
+                <li>Activity Timelines</li>
+                <li>Engagement Scoring</li>
+                <li>Heatmaps for Interaction</li>
+                <li>Anomaly Detection</li>
+            </ul>
+        </section>
+    </div>
+    <!-- Dataset Overview Page -->
+    <div class="click_box">
+        <section id="dataset-overview" class="page">
+            <h2>Dataset Overview</h2>
+            <p>We use datasets of classroom images, course curriculum, and job role requirements to monitor institutions and assess performance.</p>
+        </section>
+    </div>
+    <!-- System Functionality Page -->
+    <div class="click_box">
+        <section id="system-functionality" class="page">
+            <h2>System Functionality</h2>
+            <p>The system processes classroom images to detect patterns and provides metrics for enhanced monitoring.</p>
+        </section>
+    </div>
+    <div class="demo_box">
+        <div class="demo_box1">
+            <h2>Demo</h2>
+            <input type="file" id="uploadImage" accept="image/*">
+            <p>Upload Image</p>
+            <input type="file" id="uploadVideo" accept="video/*">
+            <p>Upload Video</p>
+            <button onclick="runDemo()">Test the System</button>
+            <div id="output"></div>
+        </div>
+    </div>
+
+    <!-- Results Container for Uploaded Files and Action Buttons -->
+    <div class="results-container" id="resultsContainer">
+        <div id="uploadedMedia"></div>
+        <div class="discribe_box">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veritatis harum error perferendis! Reiciendis sed iure officiis odio nulla quis nisi, repellat est at! Explicabo eius asperiores modi iusto atque?</p>
+        </div>
+        <div class="action-buttons">
+            <button onclick="showActivityTimelines()">Activity Timelines</button>
+            <button onclick="showEngagementScoring()">Engagement Scoring</button>
+            <button onclick="showHeatmaps()">Heatmaps for Interaction</button>
+            <button onclick="showAnomalyDetection()">Anomaly Detection</button>
+        </div>
+    </div>
+
+    <!-- Contact Page -->
+    <div class="click_box">
+        <section id="contact" class="page">
+            <h2>Contact Us</h2>
+            <p>For inquiries or partnerships, please contact us at: example@example.com</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 Automated Monitoring System. All Rights Reserved.</p>
+    </footer>
+
+    <script src="class.js"></script>
+</body>
+</html>

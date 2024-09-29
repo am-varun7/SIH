@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Model Input</title>
+    <link rel="stylesheet" href="fir.css">
+    <!-- Font Awesome for notification icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="header">
+        <!-- Notifications Icon (Right Side) -->
+        <div class="notifications" style="float: right;">
+            <i class="fas fa-bell" onclick="toggleNotifications()"></i>
+            <span id="notificationCount" class="badge">3</span>
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- Button to toggle the sidebar -->
+        <button class="openbtn" onclick="toggleNav()">☰ Toggle Sidebar</button>
+
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="logout.html">Logout</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="feedback.html">Feedback</a></li>
+                <li><a href="history.html">History</a></li>
+                <li><a href="community.html">Community</a></li> <!-- New Community Feature -->
+            </ul>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1>AI Input Interface</h1>
+
+            <!-- Input Methods Section -->
+            <div class="input-section">
+                <h3>Input via Recording</h3>
+                <button onclick="startRecording()">Start Recording</button>
+                <button onclick="stopRecording()">Stop Recording</button>
+                <p id="recordingStatus">Recording Status: Not Started</p>
+
+                <h3>Input via Text</h3>
+                <textarea id="textInput" rows="4" cols="50" placeholder="Enter your text here..."></textarea>
+                <br><br>
+
+                <!-- Submit Input -->
+                <button onclick="processInput()">Submit Input</button>
+                <p id="output">Output will be displayed here...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modals -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeLoginModal()">&times;</span>
+            <h2>Login</h2>
+            <input type="text" id="username" placeholder="Enter Username">
+            <input type="password" id="password" placeholder="Enter Password">
+            <button onclick="login()">Login</button>
+        </div>
+    </div>
+
+    <div id="feedbackModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeFeedbackModal()">&times;</span>
+            <h2>Feedback</h2>
+            <textarea id="feedbackInput" rows="4" cols="50" placeholder="Enter your feedback..."></textarea>
+            <button onclick="submitFeedback()">Submit Feedback</button>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="fir.js"></script>
+    <script>
+        // Toggle Notifications
+        function toggleNotifications() {
+            alert("You have 3 unread notifications.");
+            document.getElementById('notificationCount').style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,163 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f1f1f1;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #003366;
+    overflow: hidden;
+}
+
+nav ul li {
+    float: left;
+    padding: 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+}
+
+nav ul li a:hover {
+    background-color: #005999;
+}
+
+section {
+    padding: 20px;
+    text-align: center;
+}
+
+.banner img {
+    width: 100%;
+    height: auto;
+}
+
+.intro {
+    padding: 20px;
+}
+
+button {
+    background-color: #003366;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #005999;
+}
+
+.page {
+    display: none;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#uploadImage, #uploadVideo {
+    margin-top: 20px;
+}
+
+#output {
+    margin-top: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    display: none;
+}
+
+h2 {
+    color: #003366;
+}
+
+p {
+    color: #555;
+}
+footer {
+    background-color: #002244;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+}
+
+.demo_box{
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+.demo_box1{
+    padding: 1rem;
+    border: 0.5px solid rgb(154, 153, 153);
+    border-radius: 0.5rem;
+    background-color: white;
+}
+.page{
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 0.5px solid rgb(154, 153, 153);
+}
+.click_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+.results-container {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+.results-container img, video {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.action-buttons button {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #002244;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.action-buttons button:hover {
+    background-color: #004080;
+}
+.discribe_box{
+    border: 2px solid black;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    padding: 1rem;
+    height: 5rem;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
